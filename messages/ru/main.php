@@ -1,4 +1,6 @@
 <?php
 return [
-    'Settings' => 'Настройки',
+    'Settings'              => 'Настройки',
+    'Finance'               => 'Финансы',
+    'User accounts'         => 'Счета пользователей',
 ];

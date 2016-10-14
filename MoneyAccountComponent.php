@@ -5,18 +5,18 @@
  * @copyright 2010 SkeekS (СкикС)
  * @date 14.10.2016
  */
-namespace skeeks\cms\userBalance;
+namespace skeeks\cms\moneyAccount;
 use skeeks\cms\base\Component;
 use Yii;
 use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
 
 /**
- * Class CmsUserBalanceComponent
+ * Class UserBalanceComponent
  *
- * @package skeeks\cms\dadataSuggest
+ * @package skeeks\cms\moneyAccount
  */
-class CmsUserBalanceComponent extends Component
+class UserBalanceComponent extends Component
 {
     /**
      * @return array

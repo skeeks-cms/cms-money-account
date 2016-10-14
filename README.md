@@ -28,15 +28,15 @@ Configuration app
 
 'components' =>
 [
-    'userBalance' => [
-        'class'             => 'skeeks\cms\userBalance\CmsUserBalanceComponent',
+    'moneyAccount' => [
+        'class'             => 'skeeks\cms\moneyAccount\CmsUserBalanceComponent',
     ],
     'i18n' => [
         'translations' =>
         [
             'skeeks/user-balance' => [
                 'class'             => 'yii\i18n\PhpMessageSource',
-                'basePath'          => '@skeeks/cms/userBalance/messages',
+                'basePath'          => '@skeeks/cms/moneyAccount/messages',
                 'fileMap' => [
                     'skeeks/dadata-balance' => 'main.php',
                 ],
@@ -46,8 +46,8 @@ Configuration app
 ],
 'modules' =>
 [
-    'userBalance' => [
-        'class'         => 'skeeks\cms\userBalance\CmsUserBalanceModule',
+    'moneyAccount' => [
+        'class'         => 'skeeks\cms\moneyAccount\CmsUserBalanceModule',
     ]
 ]
 

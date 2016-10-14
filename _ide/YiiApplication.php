@@ -10,10 +10,10 @@
  */
 
 namespace yii\web;
-use skeeks\cms\userBalance\CmsUserBalanceComponent;
+use skeeks\cms\moneyAccount\MoneyAccountComponent;
 
 /**
- * @property        CmsUserBalanceComponent  $userBalance
+ * @property        MoneyAccountComponent  $moneyAccount
  *
  * Class Application
  * @package yii\web

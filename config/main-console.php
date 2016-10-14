@@ -2,18 +2,18 @@
 return [
     'components' =>
     [
-        'userBalance' => [
-            'class'             => 'skeeks\cms\userBalance\CmsUserBalanceComponent',
+        'moneyAccount' => [
+            'class'             => 'skeeks\cms\moneyAccount\MoneyAccountComponent',
         ],
 
         'i18n' => [
             'translations' =>
             [
-                'skeeks/user-balance' => [
+                'skeeks/money-account' => [
                     'class'             => 'yii\i18n\PhpMessageSource',
-                    'basePath'          => '@skeeks/cms/userBalance/messages',
+                    'basePath'          => '@skeeks/cms/moneyAccount/messages',
                     'fileMap' => [
-                        'skeeks/user-balance' => 'main.php',
+                        'skeeks/money-account' => 'main.php',
                     ],
                 ]
             ]
@@ -22,9 +22,9 @@ return [
 
     'modules' =>
     [
-        'userBalance' => [
-            'class'                 => 'skeeks\cms\userBalance\CmsUserBalanceModule',
-            'controllerNamespace'   => 'skeeks\cms\userBalance\console\controllers'
+        'moneyAccount' => [
+            'class'                 => 'skeeks\cms\moneyAccount\MoneyAccountModule',
+            'controllerNamespace'   => 'skeeks\cms\moneyAccount\console\controllers'
         ]
     ]
 ];

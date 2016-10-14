@@ -1,14 +1,14 @@
 {
-	"name": "skeeks/cms-user-balance",
+	"name": "skeeks/cms-money-account",
 	"description": "Financial accounts users of the site, write-off and recharge.",
-	"keywords": ["yii", "skeeks", "component", "balance", "accounts", "financial"],
+	"keywords": ["yii", "skeeks", "component", "money", "account", "financial"],
     "homepage": "http://cms.skeeks.com/",
 	"type": "yii2-extension",
 	"license": "GPL-3.0+",
 	"support": {
         "issues": "http://skeeks.com/",
         "wiki": "http://en.cms.skeeks.com/docs/",
-        "source": "https://github.com/skeeks-cms/cms-user-balance"
+        "source": "https://github.com/skeeks-cms/money-account"
     },
 	"authors": [
 		{
@@ -17,11 +17,12 @@
 		}
 	],
 	"require": {
-		"skeeks/cms": "*"
+		"skeeks/cms": "*",
+	  	"skeeks/cms-module-money": "*"
 	},
     "autoload": {
         "psr-4": {
-            "skeeks\\cms\\userBalance\\": ""
+            "skeeks\\cms\\moneyAccount\\": ""
         }
     }
 }
