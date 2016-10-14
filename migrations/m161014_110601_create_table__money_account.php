@@ -34,7 +34,7 @@ class m161014_110601_create_table__money_account extends Migration
 
             'user_id'               => $this->integer()->comment('Account owner'),
 
-            'value'                 => $this->decimal(18, 4)->notNull()->defaultValue(0)->comment('Amount of money'),
+            'amount'                 => $this->decimal(18, 4)->notNull()->defaultValue(0)->comment('Amount of money'),
             'currency_code'         => $this->string(3)->notNull()->comment('Currency code'),
 
             'is_active'             => $this->integer(1)->notNull()->defaultValue(1),
@@ -51,11 +51,11 @@ class m161014_110601_create_table__money_account extends Migration
 
         $this->createIndex('user_id', '{{%money_account}}', 'user_id');
 
-        $this->createIndex('value', '{{%money_account}}', 'value');
+        $this->createIndex('amount', '{{%money_account}}', 'amount');
         $this->createIndex('is_active', '{{%money_account}}', 'is_active');
         $this->createIndex('currencyUser', '{{%money_account}}', ['currency_code', 'user_id'], true);
 
-        $this->execute("ALTER TABLE {{%money_account}} COMMENT = 'Money accounts';");
+        $this->addCommentOnTable('{{%money_account}}', 'Money accounts');
 
         $this->addForeignKey(
             'money_account__created_by', "{{%money_account}}",
@@ -74,7 +74,7 @@ class m161014_110601_create_table__money_account extends Migration
 
         $this->addForeignKey(
             'money_account__currency_code', "{{%money_account}}",
-            'currency_code', '{{%money_currency}}', 'code', 'NO ACTION', 'NO ACTION'
+            'currency_code', '{{%money_currency}}', 'code', 'RESTRICT', 'CASCADE'
         );
     }
 
