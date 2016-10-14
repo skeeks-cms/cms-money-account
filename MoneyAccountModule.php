@@ -9,11 +9,11 @@ namespace skeeks\cms\moneyAccount;
 use yii\base\Module;
 
 /**
- * Class UserBalanceModule
+ * Class MoneyAccountModule
  *
  * @package skeeks\cms\moneyAccount
  */
-class UserBalanceModule extends Module
+class MoneyAccountModule extends Module
 {
     public $controllerNamespace = 'skeeks\cms\moneyAccount\controllers';
 }

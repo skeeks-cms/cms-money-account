@@ -9,35 +9,34 @@ return [
     'finance' =>
     [
         'label' => \Yii::t('skeeks/money-account', 'Finance'),
-        "img"       => ['skeeks\cms\moneyAccount\assets\UserBalanceAsset', 'icons/money-bag.png'],
+        "img"       => ['skeeks\cms\moneyAccount\assets\MoneyAccountAsset', 'icons/money-bag.png'],
         'priority'  => 300,
 
         'items' =>
         [
             [
-                'label' => \Yii::t('skeeks/money-account', 'User accounts'),
-                "img"       => ['skeeks\cms\moneyAccount\assets\UserBalanceAsset', 'icons/accounting-book.png'],
+                'label' => \Yii::t('skeeks/money-account', 'Money accounts'),
+                "img"       => ['skeeks\cms\moneyAccount\assets\MoneyAccountAsset', 'icons/accounting-book.png'],
                 'priority'  => 100,
-                "url"       => ["comments/admin-comment"],
-            ],
-
-            [
-                'label' => \Yii::t('skeeks/money-account', 'User accounts'),
-                "img"       => ['skeeks\cms\moneyAccount\assets\UserBalanceAsset', 'icons/accounting-book.png'],
-                'priority'  => 250,
-
-                "url"       => ["comments/admin-comment"],
 
                 'items' =>
                 [
                     [
-                        'priority'  => 0,
-                        'label' => \Yii::t('skeeks/comments', 'Comments'),
-                        "url"       => ["comments/admin-comment"],
-                        "img"       => ['skeeks\cms\moneyAccount\assets\UserBalanceAsset', 'images/comments.jpg'],
+                        'label' => \Yii::t('skeeks/money-account', 'Money accounts'),
+                        "img"       => ['skeeks\cms\moneyAccount\assets\MoneyAccountAsset', 'icons/accounting-book.png'],
+                        'priority'  => 100,
+                        "url"       => ["moneyAccount/admin-money-account"],
                     ],
-                ]
-            ]
+
+                    [
+                        'label' => \Yii::t('skeeks/money-account', 'Transactions'),
+                        "img"       => ['skeeks\cms\moneyAccount\assets\MoneyAccountAsset', 'icons/transfer.png'],
+                        'priority'  => 100,
+                        "url"       => ["comments/admin-comment"],
+                    ],
+                ],
+            ],
+
         ]
     ]
 ];

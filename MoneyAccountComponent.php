@@ -12,11 +12,11 @@ use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
 
 /**
- * Class UserBalanceComponent
+ * Class MoneyAccountComponent
  *
  * @package skeeks\cms\moneyAccount
  */
-class UserBalanceComponent extends Component
+class MoneyAccountComponent extends Component
 {
     /**
      * @return array
